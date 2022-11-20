@@ -1,17 +1,17 @@
 .app.dark{
     background-color: #111111;
-    color: rgb(156,156,156);
+    color: rgb(253, 253, 253);
 
     .navbarContainer{
         background-color: #111111;
-        color: rgb(156,156,156);
+        color: rgb(253, 253, 253);
         border-bottom: 0.5px solid rgb(156,156,156);;
 
         .logo{
-            color: rgb(156,156,156);
+            color:  rgb(253, 253, 253);
         }
         .navbarLink{
-            color: rgb(156,156,156);
+            color: rgb(253, 253, 253);
         }
         .searchInput{
             color: #000000;
@@ -20,7 +20,7 @@
     
     .sidebar{
         background-color: #111111;
-        color: rgb(156,156,156);
+        color: rgb(253, 253, 253);
 
         .sidebarButton{
             background-color: rgb(156,156,156);;
@@ -33,15 +33,15 @@
     }
 
     .sidebarFriendName{
-        color: rgb(156,156,156);
+        color: rgb(253, 253, 253);
     }
 
     .feed{
         background-color: #111111;
-        color: rgb(156,156,156);
+        color: rgb(253, 253, 253);
 
         .shareInput{
-            color: rgb(156,156,156);
+            color: rgb(253, 253, 253);
         }
 
         
@@ -50,7 +50,7 @@
         .shareWrapper{
             .shareTop{
                 .shareInput{
-                    color: rgb(156,156,156);
+                    color: rgb(253, 253, 253);
                 }
             }
         }
@@ -60,7 +60,7 @@
     .commentBox{
         display: flex;
         .commentInput{
-            color: rgb(156,156,156);
+            color: rgb(253, 253, 253);
             border: 1px solid rgb(156,156,156);
         }
         .commentPost{
@@ -89,7 +89,7 @@
         background-color: #111111;
 
         .rightbarUsername{
-            color: rgb(156,156,156);
+            color: rgb(253, 253, 253);
         }
     }
 
@@ -103,7 +103,7 @@
             .right{
                 form{
                     input{
-                        color: rgb(156,156,156);
+                        color: rgb(253, 253, 253);
                     }
                     .updateButton{
                         background-color: rgb(156,156,156);
