@@ -9,7 +9,6 @@ import {
   ThumbUpAltOutlined,
   ShareOutlined,
 } from "@mui/icons-material";
-import TimeAgo from "react-timeago";
 import { Link } from "react-router-dom";
 import {
   addDoc,
@@ -99,9 +98,8 @@ const Post = ({ post }) => {
               @{post.data.displayName.replace(/\s+/g, "").toLowerCase()}
             </span>
             <span className="postDate">
-            <TimeAgo
-                date={new Date(post.data?.timestamp?.toDate()).toLocaleString()}
-              />
+            {new Date(post.data?.timestamp?.toDate()).toLocaleString()}
+              
             </span>
           </div>
           <div className="postTopRight">
