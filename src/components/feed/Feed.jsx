@@ -15,6 +15,9 @@ const Feed = () => {
     const unSub = onSnapshot(collection(db, "posts"), (snapshot) => {  
       setPosts(snapshot.docs.map((doc)=>({id: doc.id, data: doc.data()})))
     })
+    return ()=>{
+      unSub();
+    }
   }, [])
   // console.log(posts)
   return (
