@@ -6,7 +6,7 @@ import NotificationsIcon from "@mui/icons-material/Notifications";
 import { Link } from "react-router-dom";
 import "./navbar.scss";
 import { useContext } from "react";
-import {AuthContext} from "../../context/AuthContext"
+import { AuthContext } from "../../context/AuthContext"
 
 const Navbar = () => {
   const { currentUser } = useContext(AuthContext)
@@ -29,28 +29,32 @@ const Navbar = () => {
       </div>
       <div className="navbarRight">
         <div className="navbarLinks">
+          <Link to={'/'} style={
+            { color:"white",textDecoration: "none" }
+          } >
           <span className="navbarLink">Homepage</span>
-          <span className="navbarLink">Timeline</span>
-        </div>
-        <div className="navbarIcons">
-          <div className="navbarIconItem">
-            <PersonIcon />
-            <span className="navbarIconBadge">2</span>
-          </div>
-          <div className="navbarIconItem">
-            <ChatBubbleIcon />
-            <span className="navbarIconBadge">10</span>
-          </div>
-          <div className="navbarIconItem">
-            <NotificationsIcon />
-            <span className="navbarIconBadge">8</span>
-          </div>
-        </div>
-        <Link to={`/profile/${currentUser.displayName}`}>
-          <img src={currentUser.photoURL} alt="" className="navbarImg" />
         </Link>
+        <span className="navbarLink">Timeline</span>
       </div>
+      <div className="navbarIcons">
+        <div className="navbarIconItem">
+          <PersonIcon />
+          <span className="navbarIconBadge">2</span>
+        </div>
+        <div className="navbarIconItem">
+          <ChatBubbleIcon />
+          <span className="navbarIconBadge">10</span>
+        </div>
+        <div className="navbarIconItem">
+          <NotificationsIcon />
+          <span className="navbarIconBadge">8</span>
+        </div>
+      </div>
+      <Link to={`/profile/${currentUser.displayName}`}>
+        <img src={currentUser.photoURL} alt="" className="navbarImg" />
+      </Link>
     </div>
+    </div >
   );
 };
 
